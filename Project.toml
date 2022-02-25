@@ -1,0 +1,7 @@
+name = "FoldsChainRules"
+uuid = "f3896c80-8cb0-432c-a566-bfe686533c08"
+authors = ["Takafumi Arakaki <aka.tkf@gmail.com> and contributors"]
+version = "0.1.0-DEV"
+
+[compat]
+julia = "1.6"
