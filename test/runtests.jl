@@ -1,6 +1,2 @@
-using FoldsChainRules
-using Test
-
-@testset "FoldsChainRules.jl" begin
-    # Write your tests here.
-end
+using TestFunctionRunner
+TestFunctionRunner.@run

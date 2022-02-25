@@ -3,5 +3,11 @@ uuid = "f3896c80-8cb0-432c-a566-bfe686533c08"
 authors = ["Takafumi Arakaki <aka.tkf@gmail.com> and contributors"]
 version = "0.1.0-DEV"
 
+[deps]
+ChainRulesCore = "d360d2e6-b24c-11e9-a2a3-2a2ae2dbcce4"
+Folds = "41a02a25-b8f0-4f67-bc48-60067656b558"
+Referenceables = "42d2dcc6-99eb-4e98-b66c-637b7d73030e"
+Transducers = "28d57a85-8fef-5791-bfe6-a80928e7c999"
+
 [compat]
 julia = "1.6"

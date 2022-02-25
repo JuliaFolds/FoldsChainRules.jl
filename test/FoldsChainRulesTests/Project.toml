@@ -1,0 +1,13 @@
+name = "FoldsChainRulesTests"
+uuid = "dca4b7c6-7df9-4a53-90df-efd94d53b4e7"
+authors = ["Takafumi Arakaki <aka.tkf@gmail.com> and contributors"]
+version = "0.1.0-DEV"
+
+[deps]
+ChainRulesTestUtils = "cdddcdb0-9152-4a09-a978-84456f9df70a"
+FoldsChainRules = "f3896c80-8cb0-432c-a566-bfe686533c08"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+Transducers = "28d57a85-8fef-5791-bfe6-a80928e7c999"
+
+[compat]
+julia = "1.6"
