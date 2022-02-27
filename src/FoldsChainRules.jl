@@ -2,19 +2,24 @@ baremodule FoldsChainRules
 
 module Internal
 
-# import Folds
+import Folds
 using ChainRulesCore: #
+    @thunk,
     ChainRulesCore,
     HasReverseMode,
+    InplaceableThunk,
     NoTangent,
+    ProjectTo,
     RuleConfig,
     add!!,
-    rrule_via_ad
+    rrule_via_ad,
+    unthunk
 using Core: Typeof
 using Referenceables: referenceable
 using Transducers: #
     BottomRF,
     Completing,
+    Executor,
     R_,
     Reduced,
     Transducer,
@@ -30,7 +35,7 @@ using Transducers: #
 
 include("utils.jl")
 include("foldl.jl")
-# include("reduce.jl")
+include("sum.jl")
 
 end  # module Internal
 

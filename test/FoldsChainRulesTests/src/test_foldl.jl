@@ -1,11 +1,9 @@
 module TestFoldl
 
-import ChainRulesTestUtils
-import FoldsChainRules
 using Test
 using Transducers: __foldl__
 
-check_rrule(args...) = ChainRulesTestUtils.test_rrule(args...; check_inferred = false)
+using ..Utils: check_rrule
 
 function test_sum()
     check_rrule(__foldl__, +, 0.0, 1:10)
