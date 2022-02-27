@@ -25,7 +25,7 @@ function ChainRulesCore.rrule(
             _, r̄f′, ācc′, x̄ = pb(ācc)
             @inbounds x̄s[i] = x̄
             allnotan &= x̄ isa NoTangent
-            return (radd!!(r̄f, r̄f′), ācc′, allnotan)
+            return (add!!(r̄f, r̄f′), ācc′, allnotan)
         end
         r̄f, ācc, allnotan = __foldl__(
             Completing(rf_pb),
