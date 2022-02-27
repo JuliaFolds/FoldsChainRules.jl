@@ -1,6 +1,9 @@
 [deps]
+ChainRulesTestUtils = "cdddcdb0-9152-4a09-a978-84456f9df70a"
+FoldsChainRules = "f3896c80-8cb0-432c-a566-bfe686533c08"
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 TestFunctionRunner = "792026f5-ac9a-4a19-adcb-47b0ce2deb5d"
+Transducers = "28d57a85-8fef-5791-bfe6-a80928e7c999"
 
 [compat]
 TestFunctionRunner = "0.1"
