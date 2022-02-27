@@ -3,7 +3,7 @@ name: Run test via Pkg.test()
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 jobs:
