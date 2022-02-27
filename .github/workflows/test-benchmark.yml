@@ -1,0 +1,23 @@
+name: Smoke test benchmark
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test-benchmark:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        julia-version:
+          - '1'
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@v2
+      - uses: julia-actions/setup-julia@v1
+        with:
+          version: ${{ matrix.julia-version }}
+      - uses: julia-actions/julia-runtest@v1
+      - run: make -C benchmark run
